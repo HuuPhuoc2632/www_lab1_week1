@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a0f23dc-7efb-470c-9615-bd637974e919" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/controllers/ControllerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/models/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/models/GrantAccess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/models/IsGrant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/models/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/models/Role.java" afterDir="false" />
+    <list default="true" id="3a0f23dc-7efb-470c-9615-bd637974e919" name="Changes" comment="second commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/database/Connection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694229500655</updated>
-      <workItem from="1694229501666" duration="2258000" />
+      <workItem from="1694229501666" duration="2766000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -106,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694229656813</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second commit">
+      <option name="closed" value="true" />
+      <created>1694232781098</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694232781098</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
 </project>
