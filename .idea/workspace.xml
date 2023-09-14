@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a0f23dc-7efb-470c-9615-bd637974e919" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/database/ConnectionDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/respository/AccountRespository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/HelloServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/controllers/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/controllers/ControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/database/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/respository/AccountRespository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/respository/AccountRespository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +231,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694229500655</updated>
       <workItem from="1694229501666" duration="2766000" />
-      <workItem from="1694684118902" duration="4699000" />
+      <workItem from="1694684118902" duration="5194000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

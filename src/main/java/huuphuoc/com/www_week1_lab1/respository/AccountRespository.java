@@ -67,7 +67,7 @@ public class AccountRespository {
         PreparedStatement ps = con.prepareStatement(sql);
         ResultSet rs = ps.executeQuery();
         Account account;
-        if(rs.next()){
+        while (rs.next()){
             account = new Account(rs.getString(1),rs.getString(2),rs.getString(3)
                     ,rs.getString(4),rs.getString(5),rs.getInt(6));
             list.add(account);

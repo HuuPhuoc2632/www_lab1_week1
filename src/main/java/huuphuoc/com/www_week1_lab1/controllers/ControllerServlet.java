@@ -12,6 +12,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class ControllerServlet extends HttpServlet {
@@ -21,26 +23,34 @@ public class ControllerServlet extends HttpServlet {
 
         AccountRespository accResp = new AccountRespository();
 
-//        Account acc = new Account("acc001", "Huynh Huu Phuoc", "12345", "huuphuoc@gmail.com", "0123456789", 1 );
+//        Account acc = new Account("acc002", "Huynh Huu Phuoc", "12345", "huuphuoc@gmail.com", "0123456789", 1 );
 //        boolean b;
 //        try {
 //            b= accResp.insertAccount(acc);
 //        } catch (Exception e) {
 //            throw new RuntimeException(e);
 //        }
-        Account acc = new Account();
+//        Account acc = new Account();
+////        try {
+////            acc = accResp.getById("acc001");
+////        } catch (Exception e) {
+////            throw new RuntimeException(e);
+////        }
+//
+        List<Account> ls = new ArrayList<>();
         try {
-            acc = accResp.getById("acc001");
+            ls = accResp.getAll();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+
 
         resp.setContentType("text/html");
 
         // Hello
         PrintWriter out = resp.getWriter();
         out.println("<html><body>");
-        out.println("<h1>" + acc + "</h1>");
+        out.println("<h1>" + ls + "</h1>");
         out.println("</body></html>");
     }
 
