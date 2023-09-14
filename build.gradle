@@ -26,6 +26,9 @@ dependencies {
   implementation 'org.mariadb.jdbc:mariadb-java-client:3.2.0'
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+  // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+  implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+
 }
 
 test {
