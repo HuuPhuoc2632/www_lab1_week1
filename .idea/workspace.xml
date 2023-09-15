@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a0f23dc-7efb-470c-9615-bd637974e919" name="Changes" comment="second commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/respository/GrantAccessResposotory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/respository/RoleRespository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/dashboard.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/controllers/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/controllers/ControllerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/models/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/models/IsGrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/models/IsGrant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/respository/AccountRespository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huuphuoc/com/www_week1_lab1/respository/AccountRespository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +46,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -68,21 +76,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/hpgam/OneDrive/Máy tính/Learning/SpringBoot/www_lab1_week1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hpgam/OneDrive/Máy tính/Learning/SpringBoot/www_lab1_week1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.11">
     <configuration name="www_lab1_week1 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -231,7 +239,8 @@
       <option name="presentableId" value="Default" />
       <updated>1694229500655</updated>
       <workItem from="1694229501666" duration="2766000" />
-      <workItem from="1694684118902" duration="5194000" />
+      <workItem from="1694684118902" duration="5338000" />
+      <workItem from="1694783852089" duration="6741000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

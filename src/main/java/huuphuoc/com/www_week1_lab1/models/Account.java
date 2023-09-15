@@ -1,5 +1,10 @@
 package huuphuoc.com.www_week1_lab1.models;
 
+import huuphuoc.com.www_week1_lab1.respository.GrantAccessResposotory;
+import huuphuoc.com.www_week1_lab1.respository.RoleRespository;
+
+import java.sql.SQLException;
+
 public class Account {
     private String account_id;
     private String full_name;
@@ -66,6 +71,12 @@ public class Account {
         this.email = email;
         this.phone = phone;
         this.status = status;
+    }
+    public Role getRole() throws Exception {
+        GrantAccessResposotory grantAccessResposotory = new GrantAccessResposotory();
+        RoleRespository roleRespository = new RoleRespository();
+        Role role = roleRespository.getById(grantAccessResposotory.getRoleID(this.account_id));
+        return role;
     }
 
     @Override

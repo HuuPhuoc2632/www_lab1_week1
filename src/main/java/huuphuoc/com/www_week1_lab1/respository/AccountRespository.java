@@ -16,6 +16,20 @@ public class AccountRespository {
     public AccountRespository() {
         con = ConnectionDB.getConnection();
     }
+    public Account login(String user, String password) throws Exception{
+        String sql = "select * from account where full_name = ? and password = ?";
+        PreparedStatement ps = con.prepareStatement(sql);
+        ps.setString(1, user);
+        ps.setString(2, password);
+        ResultSet rs = ps.executeQuery();
+        Account account;
+        while(rs.next()){
+            account = new Account(rs.getString(1),rs.getString(2),rs.getString(3)
+                    ,rs.getString(4),rs.getString(5),rs.getInt(6));
+            return account;
+        }
+        return null;
+    }
     public boolean insertAccount(Account account) throws Exception {
         String sql = "insert into account values(?,?,?,?,?,?)";
         PreparedStatement ps = con.prepareStatement(sql);
