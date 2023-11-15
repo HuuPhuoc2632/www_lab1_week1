@@ -7,8 +7,6 @@ JakartaEE project quản lý tài khoản sử dụng MariaDB
   o Hiển thị thông tin tài khoản (nếu đăng nhập thành công)  
   o Hiển thị các quyền của một account.  
   o Hiển thị các account của một role  
-  o Cấp quyền cho một account  
-  o Ghi log mỗi lần account đăng nhập, đăng xuất.  
 ## Sơ đồ cơ sở dữ liệu:
 ![image](https://github.com/HuuPhuoc2632/www_lab1_week1/assets/125341224/6cc4e578-d22d-4412-867b-e42fe1f51fc0)
 ## Demo:
