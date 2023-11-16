@@ -8,6 +8,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class RoleRespository {
     private Connection con;
@@ -39,4 +41,30 @@ public class RoleRespository {
         }
         return null;
     }
+    public List<Role> getByAccountId(String id) throws Exception{
+        String sql = "select * from role where account_id = ?";
+        PreparedStatement ps = con.prepareStatement(sql);
+        ps.setString(1, id);
+        ResultSet rs = ps.executeQuery();
+        List<Role> roles = new ArrayList<>();
+        while (rs.next()){
+           Role role = new Role(rs.getString(1),rs.getString(2),rs.getString(3)
+                    ,rs.getInt(4));
+            roles.add(role);
+        }
+        return roles;
+    }
+    public List<Role> getAll() throws Exception{
+        String sql = "select * from role";
+        PreparedStatement ps = con.prepareStatement(sql);
+        ResultSet rs = ps.executeQuery();
+        List<Role> roles = new ArrayList<>();
+        while (rs.next()){
+            Role role = new Role(rs.getString(1),rs.getString(2),rs.getString(3)
+                    ,rs.getInt(4));
+            roles.add(role);
+        }
+        return roles;
+    }
+
 }

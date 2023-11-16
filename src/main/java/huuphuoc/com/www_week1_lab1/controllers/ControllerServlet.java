@@ -2,7 +2,11 @@ package huuphuoc.com.www_week1_lab1.controllers;
 
 import huuphuoc.com.www_week1_lab1.database.ConnectionDB;
 import huuphuoc.com.www_week1_lab1.models.Account;
+import huuphuoc.com.www_week1_lab1.models.GrantAccess;
+import huuphuoc.com.www_week1_lab1.models.Role;
 import huuphuoc.com.www_week1_lab1.respository.AccountRespository;
+import huuphuoc.com.www_week1_lab1.respository.GrantAccessResposotory;
+import huuphuoc.com.www_week1_lab1.respository.RoleRespository;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -65,24 +69,32 @@ public class ControllerServlet extends HttpServlet {
 
     private void Login(HttpServletRequest req, HttpServletResponse resp) {
         AccountRespository accResp = new AccountRespository();
+        GrantAccessResposotory grantAccessResposotory = new GrantAccessResposotory();
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         try {
             Account account = accResp.login(username, password);
             if(account!=null){
                 HttpSession session = req.getSession();
-                session.setAttribute("loginSuccessful", account);
-                if (account.getRole().getRole_name()!="admin"){
+
+                if (account.getRole().getRole_name().equalsIgnoreCase("admin")){
                     List<Account> ls = new ArrayList<>();
+                    List<GrantAccess> grantAccesses = new ArrayList<>();
                     try {
                         ls = accResp.getAll();
+                        grantAccesses = grantAccessResposotory.getAll();
                         session.setAttribute("listUser", ls);
+                        session.setAttribute("listGA", grantAccesses);
                     } catch (Exception e) {
                         throw new RuntimeException(e);
                     }
                     resp.sendRedirect("dashboard.jsp");
                 }
-                else resp.sendRedirect("info.jsp");
+                else {
+                    session.setAttribute("loginSuccessful", account);
+                    resp.sendRedirect("info.jsp");
+
+                }
             }
         } catch (Exception e) {
             throw new RuntimeException(e);

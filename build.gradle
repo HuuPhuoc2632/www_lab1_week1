@@ -28,7 +28,8 @@ dependencies {
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
   // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
   implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
-
+//jstl
+  implementation group: 'org.glassfish.web', name: 'jakarta.servlet.jsp.jstl', version: '2.0.0'
 }
 
 test {

@@ -1,16 +1,16 @@
 package huuphuoc.com.www_week1_lab1.models;
 
 public class GrantAccess {
-    private String role_id;
+    private Role role_id;
     private String account_id;
     private IsGrant is_grant;
     private String note;
 
-    public String getRole_id() {
+    public Role getRole_id() {
         return role_id;
     }
 
-    public void setRole_id(String role_id) {
+    public void setRole_id(Role role_id) {
         this.role_id = role_id;
     }
 
@@ -41,7 +41,7 @@ public class GrantAccess {
     public GrantAccess() {
     }
 
-    public GrantAccess(String role_id, String account_id, IsGrant is_grant, String note) {
+    public GrantAccess(Role role_id, String account_id, IsGrant is_grant, String note) {
         this.role_id = role_id;
         this.account_id = account_id;
         this.is_grant = is_grant;
